@@ -9,7 +9,7 @@ class OrderService
 {
     public function list()
     {
-        return Order::where('user_id', Auth::id())->orderBy('created_at', 'desc')->get();
+        return Auth::user()->orders()->orderBy('created_at', 'desc')->get();
     }
 
     public function create(array $data): void
