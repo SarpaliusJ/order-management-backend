@@ -8,7 +8,7 @@
 ### Run following commands in root directory to setup and run project:
 * composer install
 * cp .env.example .env
-* .vendor/bin/sail up -d
-* .vendor/bin/sail artisan key:generate
-* .vendor/bin/sail artisan jwt:secret
-* .vendor/bin/sail artisan migrate --seed
+* ./vendor/bin/sail up -d
+* ./vendor/bin/sail artisan key:generate
+* ./vendor/bin/sail artisan jwt:secret
+* ./vendor/bin/sail artisan migrate --seed
